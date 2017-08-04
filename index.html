@@ -4,12 +4,27 @@
         <title> My Index Page </title>
 <script type="text/javascript">
 var userName = prompt("Hi, what's your name?")
-alert("Hi " + userName + ", I hope you're ready to party.")
+alert("Hi " + userName + ", I hope you're ready to party.");
 var colorQuestion = prompt("Is my favorite color blue?")
-if(colorQuestion == "Yes") {
-    alert("Good job " + userName + ", that is my favorite color.")
+console.log("The answer is blue.");
+if(colorQuestion == "Yes" || colorQuestion == "yes") {
+    alert("Good job " + userName + ", that is my favorite color.");
 } else {
-    alert("Sorry. Blue is indeed my favorite color, " + userName + ".")
+    alert("Sorry. Blue is indeed my favorite color, " + userName + ".");
+}
+var petQuestion = prompt("Okay, next question. Do I own a cat?") 
+console.log("The answer is yes, I do have a cat.")
+if (petQuestion == "Yes" || petQuestion == "yes") {
+alert("Good job " + userName + ", I do have a cat named Chloe.");
+} else {
+    alert(userName + ", that isn't correct. I actually do have a cat.");
+}
+var homeQuestion = prompt("Last question: do I want to live in Hawaii?")
+console.log("I would love to live in Hawaii")
+if (homeQuestion == "Yes") {
+    alert("You're right, that would be awesome " + userName + ".")
+} else {
+    alert("False! I would love to live in Hawaii, " + userName + "!")
 }
 </script>
     </head>
@@ -30,8 +45,6 @@ if(colorQuestion == "Yes") {
             <li> Trucking </li>
         </ul>
         <h2> List of Goals </h2>
-        <p> My goal are simple: to work remotely for as long as I can, traveling the world,<br>
-            and then retire early to the San Juan islands with my girlfriend, where I will <br>
-            continue to develop other talents and skills.
+        <p> My goal is to live well, travel and retire early. Somewhere with a nice view.
     </body>
 </html>
