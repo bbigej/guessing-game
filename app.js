@@ -7,7 +7,7 @@ correct by increasing +1 for each correct answer*/
 //first question
 var colorQuestion = prompt("Is my favorite color blue?");
 console.log("The answer is blue.");
-if(colorQuestion == "Yes" || colorQuestion == "yes") {
+if(colorQuestion.toUpperCase() == "YES" || colorQuestion.toUpperCase() =="Y") {
     questionCounter = questionCounter + 1
     alert("Good job " + userName + ", that is my favorite color.");
 } else {
@@ -16,7 +16,7 @@ if(colorQuestion == "Yes" || colorQuestion == "yes") {
 //second question
 var petQuestion = prompt("Okay, next question. Do I own a cat?"); 
 console.log("The answer is yes, I do have a cat.");
-if (petQuestion == "Yes" || petQuestion == "yes") {
+if (petQuestion.toUpperCase() == "YES" || petQuestion.toUpperCase() == "Y") {
     questionCounter = questionCounter + 1
 alert("Good job " + userName + ", I do have a cat named Chloe.");
 } else {
@@ -25,7 +25,7 @@ alert("Good job " + userName + ", I do have a cat named Chloe.");
 //third question
 var homeQuestion = prompt("Do I want to live in Hawaii?");
 console.log("Yes, I would love to live in Hawaii.");
-if (homeQuestion == "Yes" || homeQuestion == "yes") {
+if (homeQuestion.toUpperCase() == "YES" || homeQuestion.toUpperCase() == "Y") {
     questionCounter = questionCounter + 1
     alert("You're right, that would be awesome " + userName + ".");
 } else {
