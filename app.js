@@ -34,15 +34,19 @@ if (homeQuestion.toUpperCase() == "YES" || homeQuestion.toUpperCase() == "Y") {
 //fourth question
 var travelQuestion = prompt("How many countries have I traveled to?");
 console.log("The answer is 7.");
+while (travelQuestion !== 7) {
 if (travelQuestion <= 6) {
     alert("Your answer is too low, " + userName + ".");
+    travelQuestion = prompt("Give it another shot.");
 } 
 else if (travelQuestion >= 8) {
     alert("Your answer is too high, " + userName + ".");
+     travelQuestion = prompt("Give it another shot.");
 }
 else {
     questionCounter = questionCounter + 1;
 alert("Good guess " + userName +", that's right.");
+travelQuestion = 7
 }
-
+}
 alert("You got " + questionCounter + " questions correct.");
