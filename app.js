@@ -4,7 +4,18 @@ alert("Hi " + userName + ", welcome to my page.");
 var questionCounter = 0;   /*this will keep track of how many answers are 
 correct by increasing +1 for each correct answer*/
 
-//first question
+// *****   first question prompts *****
+/*var colorQuestion = prompt("Is my favorite color blue?");
+console.log("The answer is blue.");
+if(colorQuestion.toUpperCase() == "YES" || colorQuestion.toUpperCase() =="Y") {
+    questionCounter = questionCounter + 1;
+    alert("Good job " + userName + ", that is my favorite color.");
+} else {
+    alert("Sorry. Blue is indeed my favorite color, " + userName + ".");
+}*/
+
+//first question function
+function firstQuestion() {
 var colorQuestion = prompt("Is my favorite color blue?");
 console.log("The answer is blue.");
 if(colorQuestion.toUpperCase() == "YES" || colorQuestion.toUpperCase() =="Y") {
@@ -13,6 +24,9 @@ if(colorQuestion.toUpperCase() == "YES" || colorQuestion.toUpperCase() =="Y") {
 } else {
     alert("Sorry. Blue is indeed my favorite color, " + userName + ".");
 }
+}
+firstQuestion();
+
 //second question
 var petQuestion = prompt("Okay, next question. Do I own a cat?"); 
 console.log("The answer is yes, I do have a cat.");
