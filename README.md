@@ -2,9 +2,9 @@
 
 Bryan Bigej
 
-The Guessing Game project:
+My person website and the Guessing Game project:
 
-This is a simple project with the goal of further developing my web development skills using important web development concepts and tools. Users will respond to a series of simple questions and the programming should cause the page to respond appropriately.
+This is a simple project geared toward developing my HTML, CSS and JavaScript skills. It contains my personal webite and some basic JavaScript interactivity, where users respond to questions and the answers will appear on the page.
 
-No citations to report
+No citations to report, other than Mark's Code 201 Github demonstrations as a reference.
 
