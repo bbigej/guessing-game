@@ -4,28 +4,28 @@
 
 //code to load messages into the index.html document?
 var message="Special Instructions for User";
-var messageTwo = ""
-var messageThree = ""
-var messageFour = ""
-var messageFive = ""
-var messageSix = ""
+var messageTwo = "";
+var messageThree = "";
+var messageFour = "";
+var messageFive = "";
+var messageSix = "";
 function updatePage() {
-    document.getElementById('game').innerHTML = message
+    document.getElementById('game').innerHTML = message;
 }
 function updatePageTwo() {
-    document.getElementById('qTwo').innerHTML = messageTwo
+    document.getElementById('qTwo').innerHTML = messageTwo;
 }
 function updatePageThree() {
-    document.getElementById('qThree').innerHTML = messageThree
+    document.getElementById('qThree').innerHTML = messageThree;
 }
 function updatePageFour() {
-    document.getElementById('qFour').innerHTML = messageFour
+    document.getElementById('qFour').innerHTML = messageFour;
 }
 function updatePageFive() {
-    document.getElementById('qFive').innerHTML = messageFive
+    document.getElementById('qFive').innerHTML = messageFive;
 }
 function updatePageSix() {
-    document.getElementById('qSix').innerHTML = messageSix
+    document.getElementById('qSix').innerHTML = messageSix;
 }
 
 //get the user's name function
@@ -157,7 +157,7 @@ else if (travelQuestion >= 8) {
 else {
     questionCounter = questionCounter + 1;
 messageFive = "Good guess " + userName +", that's right.";
-travelQuestion = 7
+travelQuestion = 7;
         }
     }
 }
