@@ -1,7 +1,7 @@
 
 
 //Code to load messages into the index.html document
-var message="Special Instructions for User";
+var message = "Special Instructions for User";
 
 function updatePage() {
     document.getElementById('game').innerHTML = message;
@@ -11,7 +11,7 @@ function updatePage() {
 // getting the user's name function
 function getName() {
     var userName = prompt("Hi, what's your name?");
-    message = "Welcome " + userName + "!"
+    message = "Welcome " + userName + "!" + "<br>";
     return userName;
 }
 
@@ -25,18 +25,18 @@ correct by increasing +1 for each correct answer*/
 //first question function
 function firstQuestion() {
     var colorQuestion = prompt("Is my favorite color blue?");
-    onsole.log("The answer is blue.");
+    console.log("The answer is blue.");
     if(colorQuestion.toUpperCase() == "YES" || colorQuestion.toUpperCase() =="Y") {
     questionCounter = questionCounter + 1;
-    messageTwo = "Good job " + userName + ", that is my favorite color.";
+    message += "Good job " + userName + ", that is my favorite color." + "<br>";
     } else {
-    messageTwo = "Sorry. Blue is indeed my favorite color, " + userName + ".";
+    message += "Sorry. Blue is indeed my favorite color, " + userName + "." + "<br>";
     }
 }
 
 firstQuestion();
 
-updatePageTwo();
+updatePage();
 
 // second question function
 function secondQuestion() {
@@ -44,15 +44,15 @@ function secondQuestion() {
     console.log("The answer is yes, I do have a cat.");
     if (petQuestion.toUpperCase() == "YES" || petQuestion.toUpperCase() == "Y") {
     questionCounter = questionCounter + 1;
-    messageThree = "Good job " + userName + ", I do have a cat named Chloe.";
+    message += "Good job " + userName + ", I do have a cat named Chloe." + "<br>";
     } else {
-    messageThree = userName + ", that isn't correct. I actually do have a cat.";
+    message += userName + ", that isn't correct. I actually do have a cat." + "<br>";
     }
 }
 
 secondQuestion();
 
-updatePageThree();
+updatePage();
 
 
 //third question function
@@ -61,15 +61,15 @@ function thirdQuestion() {
     console.log("Yes, I would love to live in Hawaii.");
     if (homeQuestion.toUpperCase() == "YES" || homeQuestion.toUpperCase() == "Y") {
     questionCounter = questionCounter + 1;
-    messageFour = "You're right, that would be awesome " + userName + ".";
+    message += "You're right, that would be awesome " + userName + "." + "<br>";
     } else {
-    messageFour = "False! I would love to live in Hawaii, " + userName + "!";
+    message += "False! I would love to live in Hawaii, " + userName + "!" + "<br>";
     }
 }
 
 thirdQuestion();
 
-updatePageFour();
+updatePage();
 
 //fourth question function
 function fourthQuestion() {
@@ -77,16 +77,16 @@ function fourthQuestion() {
     console.log("The answer is 7.");
     while (travelQuestion !== 7) {
     if (travelQuestion <= 6) {
-    messageFive = "Your answer is too low, " + userName + ".";
+    message += "Your answer is too low, " + userName + ".";
     travelQuestion = prompt("Give it another shot.");
     } 
     else if (travelQuestion >= 8) {
-    messageFive = "Your answer is too high, " + userName + ".";
+    message += "Your answer is too high, " + userName + ".";
      travelQuestion = prompt("Give it another shot.");
     }
     else {
     questionCounter = questionCounter + 1;
-    messageFive = "Good guess " + userName +", that's right.";
+    message += "Good guess " + userName +", that's right." + "<br>";
     travelQuestion = 7;
         }
     }
@@ -94,8 +94,8 @@ function fourthQuestion() {
 
 fourthQuestion();
 
-updatePageFive();
+updatePage();
 
-messageSix = "You got " + questionCounter + " questions correct.";
+message += "You got " + questionCounter + " questions correct.";
 
-updatePageSix();
+updatePage();
