@@ -52,11 +52,11 @@ function fourthQuestion() {
     while (travelQuestion !== 7) {
     if (travelQuestion <= 6) {
     message += "<div class='wrong'><p>Your answer is too low, " + userName + ".</p></div>" + "<br>";
-    travelQuestion = prompt("Give it another shot.");
+    travelQuestion = prompt("Too low, try again.");
     } 
     else if (travelQuestion >= 8) {
     message += "<div class='wrong'><p>Your answer is too high, " + userName + ".</p></div>" + "<br>";
-     travelQuestion = prompt("Give it another shot.");
+     travelQuestion = prompt("Too high, try again.");
     }
     else {
     questionCounter = questionCounter + 1;
