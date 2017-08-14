@@ -9,7 +9,7 @@ function updatePage() {
 // getting the user's name function
 function getName() {
     var userName = prompt("Hi, what's your name?");
-    message = "Welcome " + userName + "!" + "<br>";
+    message = "Welcome " + userName + "!" + "<br><br>";
     return userName;
 }
 
@@ -32,18 +32,18 @@ function yesNoQuestion(question, rightAnswer, wrongAnswer) {
 
 //question one
 yesNoQuestion("Is my favorite color blue?", 
-"Good job " + userName + ", that is my favorite color." + "<br>",
-"Sorry. Blue is indeed my favorite color, " + userName + "." + "<br>",);
+"<div class='right'><p>Good job " + userName + ", that is my favorite color.</p></div>" + "<br>",
+"<div class='wrong'><p>Sorry. Blue is indeed my favorite color, " + userName + ".</p></div>" + "<br>",);
 
 //question two
 yesNoQuestion("Okay, next question. Do I own a cat?", 
-"Good job " + userName + ", I do have a cat named Chloe." + "<br>",
-userName + ", that isn't correct. I actually do have a cat.");
+"<div class='right'><p>Good job " + userName + ", I do have a cat named Chloe.</p></div>" + "<br>",
+"<div class='wrong'><p>" + userName + ", that isn't correct. I actually do have a cat.</p></div>" + "<br>");
 
 //question three
 yesNoQuestion("Do I want to live in Hawaii?", 
-"You're right, that would be awesome " + userName + "." + "<br>",
-"False! I would love to live in Hawaii, " + userName + "!" + "<br>",);
+"<div class='right'><p>You're right, that would be awesome " + userName + ".</p></div>" + "<br>",
+"<div class='wrong'><p>False! I would love to live in Hawaii, " + userName + "!</p></div>" + "<br>",);
 
 //question four
 function fourthQuestion() {
@@ -51,16 +51,16 @@ function fourthQuestion() {
     console.log("The answer is 7.");
     while (travelQuestion !== 7) {
     if (travelQuestion <= 6) {
-    message += "Your answer is too low, " + userName + ".";
+    message += "<div class='wrong'><p>Your answer is too low, " + userName + ".</p></div>" + "<br>";
     travelQuestion = prompt("Give it another shot.");
     } 
     else if (travelQuestion >= 8) {
-    message += "Your answer is too high, " + userName + ".";
+    message += "<div class='wrong'><p>Your answer is too high, " + userName + ".</p></div>" + "<br>";
      travelQuestion = prompt("Give it another shot.");
     }
     else {
     questionCounter = questionCounter + 1;
-    message += "Good guess " + userName +", that's right." + "<br>";
+    message += "<div class='right'><p>Good guess " + userName +", that's right.</p></div>" + "<br>";
     travelQuestion = 7;
         }
     }
@@ -81,14 +81,14 @@ function fifthQuestion() {
         response == fifthQuestionAnswers[4] ||
         response == fifthQuestionAnswers[5])    {
     questionCounter = questionCounter + 1;
-    message += "Good guess, " + userName + ", it was lovely."+ "<br>";
+    message += "<div class='right'><p>Good guess, " + userName + ", it was lovely.</p></div>" + "<br>";
     } else {
-    message += "I haven't been there yet, " + userName + "."+ "<br>";
+    message += "<div class='wrong'><p>I haven't been there yet, " + userName + ".</p></div>"+ "<br>";
     }
 }
 
 fifthQuestion();
 
-message += "You answered " + questionCounter + " questions correctly.";
+message += "<p>You answered " + questionCounter + " question(s) correctly.</p>";
 
 updatePage();

@@ -1,5 +1,13 @@
-* {
+body {
     color:pink;
     font-family: Roboto, Verdana, sans-serif;
     background-color: black;
+}
+
+.right {
+    color: #258498;
+}
+
+.wrong {
+    color: #AE1E85
 }
