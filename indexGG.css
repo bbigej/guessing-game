@@ -4,10 +4,16 @@ body {
     background-color: black;
 }
 
+img {
+    width: 20px;
+    height: 20px;
+}
+
 .right {
     color: #258498;
 }
 
 .wrong {
-    color: #AE1E85
+    color: #AE1E85;
 }
+
